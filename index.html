@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="a.gif" type="image/gif">
+    <title>twin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="000201200e3wjfwdisabuabAIUEBOFEYBAIUFYB.css">
+</head>
+<body>
+    <div id="wallpaper-div"></div>
+    <section id="top-section">
+        <div id="lyrics-container">
+            <div id="bg-text"></div>
+        </div>
+        <img id="avatar" class="w-24 h-24 rounded-full border border-white/10 shadow-xl mx-auto mb-3 cursor-pointer"/>
+        <h1 id="name" class="inline-block text-4xl font-black uppercase tracking-tight mb-4 cursor-pointer"></h1>
+        <div id="social-links" class="flex justify-center gap-6 mb-6">
+            <a href="https://github.com/vhhm" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/olaquesurpresavcporaqui" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://xisde.fun" target="_blank" class="social-icon"><i class="fas fa-globe-americas"></i></a>
+        </div>
+        <div id="spotify-player" class="glass-card p-6 flex items-center gap-6 max-w-md mx-auto mt-6">
+            <img id="track-cover" class="w-20 h-20 rounded-xl shadow-lg bg-white/5 object-cover">
+            <div class="text-left overflow-hidden">
+                <p id="track-name" class="font-black text-xl truncate">Música</p>
+                <p id="artist-name" class="hud-tag opacity-60 truncate">Artista</p>
+                <div class="w-full bg-white/10 h-1.5 rounded-full mt-3 overflow-hidden">
+                    <div id="progress-bar" class="bg-orange-500 h-full w-0 transition-all duration-300"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottom-section">
+        <div class="glass-card p-5 text-center min-w-[350px]">
+            <span id="hour-desc" class="hud-tag opacity-80">seu horario</span>
+            <div id="clock" class="text-6xl md:text-7xl font-black tracking-tighter">00:00</div>
+            <div id="date" class="hud-tag mb-6">DATA</div>
+            <div class="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+                <div class="text-center">
+                    <div class="hud-tag">Temperatura</div>
+                    <div id="temp" class="text-5xl font-black">--°</div>
+                    <div class="mt-2 flex items-center justify-center gap-2">
+                        <span id="weather-icon" class="text-orange-500 text-xl"></span>
+                        <span id="weather-desc" class="hud-tag opacity-60">--</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="hud-tag">Localização</div>
+                    <div id="loc" class="text-5xl font-black">--</div>
+                    <div id="loc-full" class="hud-tag opacity-30 mt-2">BRASIL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="aiofiuhweoisn~wfiohwaoiseeuflni.js"></script>
+
+    <script>
+        // 1. Bloqueia clique direito
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // 2. Bloqueia atalhos de teclado (F12, Ctrl+Shift+I, Ctrl+U, etc)
+        document.onkeydown = function(e) {
+            if (
+                e.keyCode === 123 || // F12
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || // Ctrl+Shift+I/J/C
+                (e.ctrlKey && e.keyCode === 85) // Ctrl+U
+            ) {
+                return false;
+            }
+        };
+
+        // 3. Anti-Inspecionar agressivo (Debugger Loop)
+        // Isso pausa a execução da página se o console for aberto
+        (function() {
+            var block = function() {
+                setInterval(function() {
+                    debugger;
+                }, 50);
+            };
+            try {
+                block();
+            } catch (err) {}
+        })();
+    </script>
+</body>
+</html>
